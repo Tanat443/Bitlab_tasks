@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+}
+nav{
+    display: flex;
+    padding: 15px 3%;
+    background-color: brown;
+}
+.logo{
+    color: white;
+    width: 75%;
+    font-size: 18px;
+    font-weight: 200;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 5px ;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.content{
+    margin: 20px;
+    display: flex;
+    background-color: rgb(150, 218, 217);
+}
+.content img{
+    height: 300px;
+    width: 450px;
+    padding: 25px;
+}
+.info{
+    padding: 20px 0 ;
+}
+.info h3{
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+.info p{
+    margin-right: 30px;
+    margin-top: 15px;
+}
+.header{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+}
+.slide{
+    display: flex;
+    margin: 30px 20px;
+    justify-content: space-between;
+}
+.box{
+    border: 1px rgb(213, 213, 213) solid;
+    width:350px;
+    
+}
+.box img{
+   width: 100%;
+    
+}
+.box h4 {
+    font-size: 18px;
+    padding: 15px;
+    letter-spacing: 0.5px;
+}
+.box p{
+    padding: 0 15px;
+    letter-spacing: 0.5px;
+}
+button{
+    padding: 10px;
+    margin: 20px 15px;
+    font-size: 14px;
+    color: white;
+    background-color: brown;
+    border: 0;
+}
+

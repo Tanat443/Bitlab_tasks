@@ -1,0 +1,96 @@
+header{
+    background-color: rgb(1, 1, 117);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding: 15px;
+    
+}
+.logo{
+    width: 80%;
+    margin-left: 30px;
+    font-weight: 700;   
+}
+.links a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: white;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.container{
+    display: flex;
+}
+.form{
+    width: 15%;
+    margin: 20px 40px;
+}
+.form p{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.form input{
+    width: 90%;
+    height: 25px;
+}
+.form button{
+    background-color: rgb(6, 107, 55);
+    color: white;
+    padding: 7px 15px;
+    margin-top: 15px;
+    border: 0;
+    border-radius: 3px;
+}
+.news{
+    margin-top: 20px;
+    width: 55%;
+}
+.news a{
+    text-decoration: none;
+    color: black;
+}
+.news h3{
+    margin: 10px 0;
+    color: rgb(1, 1, 117);
+}
+.news p{
+    margin-top: 5px;
+}
+img{
+width: 100%;
+height: 200px;
+}
+.tableFootball{
+    width: 25%;
+    margin: 30px ;
+}
+table{
+    width: 100%;
+}
+td {
+    border: 1px white;padding: 2px;
+    font-size: 13px;
+    padding: 7px;
+}
+thead{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    
+}
+th{
+    padding: 5px;
+}
+tbody{
+    background-color: rgb(136, 234, 136);
+}
+tbody tr:first-child {
+    background: green;
+    color: white; 
+}
+tr:nth-child(n+5) {background: rgb(220, 212, 200);}
+tr:nth-last-child(3) {background: rgb(255, 189, 231);}
+tr:nth-last-child(2) {background: rgb(255, 189, 231);}
+tbody tr:last-child {background: rgb(255, 189, 231);}
