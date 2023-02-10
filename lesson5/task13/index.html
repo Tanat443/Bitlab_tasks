@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //let sum = parseInt(prompt('Insert cash'));
+    let choice = parseInt(prompt('Choose your branch:\n1 - Science, 2 - Humanitarian subjects, 3 - Art, 4 - Sport:'));
+    if(choice==1){
+        choice = parseInt(prompt('1 - Math, 2 - Physics:'));
+        if(choice==1){
+            alert('You are Financier');
+        } else if(choice==2){
+            alert('You are Engineer');
+        }
+    }else if(choice==2){
+        choice = parseInt(prompt('1 - History, 2 - Foreign Languages:'));
+        if(choice==1){
+            alert('You are Historic or Diplomat');
+        } else if(choice==2){
+            alert('You are Translator');
+        }
+    } else if(choice==3){
+        choice = parseInt(prompt('1 - Drawing, 2 -Singing:'));
+        if(choice==1){
+            alert('You are Painter or Architect');
+        } else if(choice==2){
+            alert('You are Singer or Tamada');
+        }
+    } else if(choice==4){
+        choice = parseInt(prompt('1 - Drawing, 2 -Singing:'));
+        if(choice==1){
+            alert('You are footballer or Basketball player');
+        } else if(choice==2){
+            alert('You are boxer or tennis player');
+        }
+    }
+</script>
+</html>

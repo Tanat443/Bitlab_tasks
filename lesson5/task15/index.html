@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let n = parseInt(prompt('Insert'));
+    let dollar = parseInt(n/380);
+    let cent = (n/380-dollar).toFixed(2)*100;
+    if(n%380==0){
+        alert(`Only ${dollar} USD`);
+    }else{
+        alert(`${dollar} USD and ${cent} cents`);
+
+    }
+</script>
+</html>

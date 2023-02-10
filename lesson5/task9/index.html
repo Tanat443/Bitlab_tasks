@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let sum = parseInt(prompt('Insert cash'));
+    let choice = parseInt(prompt('INSERT YOUR AMOUNT IN KZT:\n1- CONVERT TO USD\n2- CONVERT TO EUR\n3- CONVERT TO GBP'));
+    if(choice==1){
+        alert(`${sum} KZT = ${(sum/380).toFixed(2)} USD`);
+    }else if(choice==2){
+        alert(`${sum} KZT = ${(sum/430).toFixed(2)} EUR`);
+    } else if(choice==3){
+        alert(`${sum} KZT = ${(sum/480).toFixed(2)} GBP`);
+    }
+</script>
+</html>
