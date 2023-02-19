@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    users = [
+        {"login":"ilyas", "password": "qwerty"},
+        {"login":"eldar", "password": "qqqqq"},
+        {"login":"assylkhan", "password": "qweqwe"},
+        {"login":"anel", "password": "asdasd"},
+        {"login":"alibek", "password": "aaaaaa"}
+    ];
+
+    let login = prompt('Insert your login');
+    let pass = prompt('Insert your password');
+    let check= 0;
+
+    for (let i = 0; i< users.length; i++) {
+      if(users[i].login==login && users[i].password==pass){
+        alert('Welcome, you are authenticated');
+        check = 1;
+      }   
+    }
+    if(check==0){
+        alert('User not found');
+    }
+</script>
+</html>

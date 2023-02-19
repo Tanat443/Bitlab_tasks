@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let books = [
+    {name:"Game Throne", autor:"Unknown",isbn:"21312414",price:"43$"},
+    {name: "Harry Potter and the Philosopher's Stone", autor:"Joanne Rowling", isbn:"1233123", price:"50$"},
+    {name: "Harry Potter and the Chamber of Secrets", autor:"Joanne Rowling", isbn:"222332", price:"40$"},
+    {name: "Harry Potter and the Prisoner of Azkaban", autor:"Joanne Rowling", isbn:"452323", price:"55$"},
+    ]
+    let autor = prompt('Insert');
+
+    for (let i = 0; i < books.length; i++) {
+        if(books[i].autor ==autor){
+            alert(`${books[i].name} - ${books[i].autor} - ${books[i].isbn} - ${books[i].price}`);
+        }
+        
+    }
+
+</script>
+</html>
