@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    students = [
+        {"name":"Arman","surname":"Muratbekov","gpa":"5"}
+    ];
+    while (true) {
+        let text="";
+        let choice = parseInt(prompt("PRESS 1 TO ADD STUDENT\nPRESS 2 TO LIST STUDENT\nPRESS 0 TO EXIT"));
+        if(choice==1){
+            let student ={};
+            let name = prompt('INSERT NAME:');
+            let surname = prompt('INSERT NAME:');
+            let gpa = parseFloat(prompt('INSERT GPA:'));
+            student.name = name;
+            student.surname = surname;
+            student.gpa = gpa;
+            students.push(student);
+        }
+        if(choice==2){
+            for(let u of students){
+                text+= u["name"] + " - " + u["surname"]+" - " + u["gpa"]+"\n";
+            }
+            alert(text);
+        }
+        if(choice==0){
+            break
+        }
+    }
+</script>
+</html>
