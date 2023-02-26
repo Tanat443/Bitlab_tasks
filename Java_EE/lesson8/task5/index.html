@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #gallery{
+            height: 500px;
+            width: 500px;
+            border: 0.5px solid gray;
+            border-radius: 5px;
+            margin: 0 auto;
+            
+        }
+        #image{
+           height: 75%;
+           margin-left: 120px;
+           
+        }
+        .bot{
+            display: flex;
+            justify-content: space-between;
+            height: 20%;
+        }
+        .bot img{
+            height: 100%;
+            width: 100%;
+            padding: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div id="gallery">
+        <img id="image" src="./top.png">
+        <div class="bot">
+            <img id="img1" src="./top.png" alt="">
+            <img id="img2" src="./top1.png" alt="">
+            <img id="img3" src="./top2.png" alt="">
+            <img id="img4" src="./top3.png" alt="">
+            <!-- <img id="img5" src="./top4.jpeg" alt=""> -->
+        </div>
+    </div>
+</body>
+<script>
+    const images = [
+        "top.png",
+        "top1.png",
+        "top2.png",
+        "top3.png",
+        "top4.jpeg", 
+    // add more images as needed
+    ];
+    document.getElementById("img1").addEventListener('click',() => {
+    image.src = images[0];
+});
+document.getElementById("img2").addEventListener('click',() => {
+    image.src = images[1];
+});
+document.getElementById("img3").addEventListener('click',() => {
+    image.src = images[2];
+});
+document.getElementById("img4").addEventListener('click',() => {
+    image.src = images[3];
+});
+document.getElementById("img5").addEventListener('click',() => {
+    image.src = images[4];
+});
+
+</script>
+</html>

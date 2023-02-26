@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            width: 50%;
+            
+        }
+        #line{
+            display: flex;
+            padding: 5px;
+            width: 100%;
+            
+        }
+        #line p{
+            padding: 0;
+            font-size: 14px;
+            width: 15%;
+        }
+        #line input{
+            height: 30px;
+        }
+        .invalid{
+            border-color: red;
+        }
+        #signIn{
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div id="line">
+            <p>LOGIN:</p>
+            <input id="login" type="text" placeholder="Insert login">
+        </div>
+        <div id="line">
+            <p>PASSWORD:</p>
+            <input id="password" type="password" placeholder="Insert password">
+        </div>
+        <button id="signIn" onclick="check()">SING IN</button>
+    </div>
+</body>
+
+<script>
+    let usersArray = [
+	   {name: 'Ilyas', login: 'ileke', password: 'ileke123'},
+	   {name: 'Aibek', login: 'aieke', password: 'aieke123'},
+	   {name: 'Eldar', login: 'eleke', password: 'eleke123'}
+	 ];
+    function check(){
+        console.log(login.value);
+        let flag =false;
+        for(let user of usersArray){
+            if(user.login==login.value && user.password==password.value){
+                flag = true;
+                break;
+            }
+        }
+        if(flag==true){
+            document.getElementById("login").classList.remove("invalid")
+        document.getElementById("password").classList.remove("invalid")
+            alert('You are authenticated');
+            
+        } else{
+        document.getElementById("login").classList.add("invalid")
+        document.getElementById("password").classList.add("invalid")
+        }
+    }
+    
+    
+
+
+</script>
+</html>

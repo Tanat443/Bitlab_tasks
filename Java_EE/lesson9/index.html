@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+        <h3 class="logo">Twitter</h3>
+        <a href="#">Tweets</a>
+        <a href="./login.html">Login</a>
+        <a href="#">Register</a>
+        </nav>
+    </div>
+    <div class="content">
+        <form action="">
+            <label for="email" >EMAIL:</label>
+            <input type="text" id="email" required>
+            <label for="password">PASSWORD:</label>
+            <input type="password" id="password">
+            <label for="fullName">FULL NAME:</label>
+            <input type="text" id="fullName" required>
+            <label for="country">COUNTRY:</label>
+            <select name="country" id="country"required>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Russia">Russia</option>
+                <option value="USA">USA</option>
+            </select>
+            <label for="birthDate">BIRTHDATE:</label>
+            <input type="date" id="birthdate">
+            <button onclick="addUser()">REGISTER</button>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

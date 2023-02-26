@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .counter{
+            display: flex;
+            width: 40%;
+        }
+        #plus{
+            padding: 15px;
+            width: 20%;
+        }
+        #minus{
+            padding: 15px;
+            width: 20%; 
+        }
+        #num{
+            width: 60%;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="counter">
+        <button id="plus" onclick="plus()">+</button>
+        <p id="num">231</p>
+        <button id="minus" onclick="minus()">-</button>
+    </div>
+</body>
+<script>
+    function plus(){
+        let count = parseInt(num.innerHTML);
+        num.innerHTML = count+1;
+    }
+    function minus(){
+        let count = parseInt(num.innerHTML);
+        num.innerHTML = count-1;
+    }
+</script>
+</html>

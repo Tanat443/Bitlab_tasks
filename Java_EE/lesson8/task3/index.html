@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            width: 50%;
+            
+        }
+        #line{
+            display: flex;
+            padding: 5px;
+            width: 100%;
+            
+        }
+        #line p{
+            padding: 0;
+            font-size: 14px;
+            width: 20%;
+        }
+        #card1{
+            width: 50px;
+        }
+        #card2{
+            width: 50px;
+        }
+        #card3{
+            width: 50px;
+        }
+        #card4{
+            width: 50px;
+        }
+        #line input{
+            
+            height: 30px;
+            margin-right: 20px;
+        }
+        #cvv{
+            width: 50px;
+        }
+        #signIn{
+            padding: 5px 10px;
+        }
+        button{
+            background-color: rgb(53, 53, 169);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div id="line">
+            <p>CARD:</p>
+            <input id="card1" type="text" maxlength="4">
+            <input id="card2" type="text" maxlength="4">
+            <input id="card3" type="text" maxlength="4">
+            <input id="card4" type="text" maxlength="4">
+        </div>
+        <div id="line">
+            <p>NAME SURNAME:</p>
+            <input id="fullname" type="text" placeholder="Insert fullname">
+        </div>
+        <div id="line">
+            <p>CVV:</p>
+            <input id="cvv" type="password" >
+        </div>
+        <button id="complete" onclick="check()">COMPLETE</button>
+    </div>
+</body>
+<script>
+    let usersArray = [
+	   {fullname: 'Ilyas Zhansugyrov', card: '4413434135342424', cvv: '667'},
+	   {fullname: 'Aibek Makhambet', card: '4413434135342424', cvv: '867'},
+	   {fullname: 'Eldar Aidar', card: '4413434135342424', cvv: '167'}
+	];
+    function check(){
+        let flag = false;
+        let fullcard = card1.value+card2.value+card3.value+card4.value;
+        console.log(fullcard);
+        for(let user of usersArray){
+            if(user.card==parseInt(fullcard) && user.fullname==fullname.value && user.cvv==cvv.value){
+                flag = true;
+                break;
+            }
+        }
+        if(flag==true){
+            alert('Transaction comlpleted');
+        }else{
+            alert('Invalid Data');
+        }
+
+    }
+</script>
+</html>

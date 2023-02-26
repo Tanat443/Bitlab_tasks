@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Exchange Rates</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<form>
+        <div class="form1">
+		    <label>Введите сумму:</label>
+            <div class="f2">
+		        <input type="number" id="amount" name="amount" placeholder="Введите сумму:" required>
+		        <select id="currency" name="currency" >
+                    <option value="KZT">KZT</option>
+			        <option value="USD">USD</option>
+			        <option value="EUR">EUR</option>
+		        </select>
+            </div>
+        </div>
+        <div class="kzt">
+            <label ><b>KZT (tenge)</b></label>
+            <input id="tenge" type="number" disabled >
+        </div>
+        <div class="usd">
+            <label ><b>USD (dollar)</b></label>
+            <input id="dollar" type="number" disabled>
+        </div>  
+        <div class="eur">
+            <label ><b>EUR (euro)</b></label>
+            <input id="euro" type="number" disabled>
+        </div>         
+		
+	</form>
+	
+	<script>
+        function onChange(){
+            if(currency.value=="KZT"){
+                tenge.value = "0";
+                dollar.value = (amount.value/431).toFixed(2);
+                euro.value = (amount.value/507).toFixed(2);
+            } else if (currency.value=="USD"){
+                tenge.value = (amount.value*429).toFixed(2);
+                dollar.value = "0";
+                euro.value = (amount.value*429/509).toFixed(2);
+            } else if (currency.value=="EUR"){
+                tenge.value = (amount.value*507).toFixed(2);
+                dollar.value = (amount.value*507/431).toFixed(2);
+                euro.value = 0;
+            } 
+        }
+        currency.onchange =onChange;
+    </script>
+</body>
+</html>
