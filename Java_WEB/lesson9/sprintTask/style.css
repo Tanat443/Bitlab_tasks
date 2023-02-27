@@ -4,9 +4,13 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+
 .hero{
     padding: 15px 3%;
     background-color: rgb(29, 114, 105);
+}
+.logo{
+    width: 80%;
 }
 nav{
     width: 85%;
@@ -35,11 +39,22 @@ form{
 form label{
     margin-top: 15px;
 }
+form input,select{
+    border: 0.5px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    width: 270px;
+    height: 30px;
+    font-size: 16px;
+    margin-top: 5px;
+    padding: 5px;
+    
+}
 button{
     margin-top: 15px;
     padding: 7px;
     background-color: rgb(29, 29, 135);
     color: white;
     border: 0;
-    border-radius: 2px;
+    border-radius: 5px;
+    width: 100px;
 }
