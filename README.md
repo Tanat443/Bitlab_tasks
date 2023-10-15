@@ -1,3 +1,4 @@
+<html>
 # <span style="color:aqua">Hey, Bocal!</span>
 
 Этот рейд является нашим финальным групповым проектом на <span style="color:aqua">piscine23sep</span>
@@ -6,6 +7,7 @@
 Спасибо вам за вашу "легкую", но важную работу. Ваше участие в процессе обучения значит "многое" для нас, и мы гордимся тем, что разделили этот <span style="color:aqua">piscine</span> с вами.
 
 С уважением и благодарностью, <span style="color:fuchsia">gshaken, agalimov, amussabek</span>, <span style="color:grey">(tkural)</span>.
+</html>
 
 ```bash
 Bocal, они на посту,
@@ -22,3 +24,4 @@ Bocal, вы - наши герои в этой суете.
 Проверяя творчество и знания детей.
 Без вас не было бы правды и света,
 Bocal, вы для нас - всегда на вес золота.
+
